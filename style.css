@@ -1,0 +1,155 @@
+:root {
+  --background-color: #000;
+  --complementary-color: rgba(255, 230, 0, 0.1);
+  --white-color: #fff;
+  --utility-yellow: #ffd600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Keyframes*/
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/*Utilities*/
+.u__bold {
+  font-weight: 500;
+}
+
+.u__yellow {
+  color: var(--utility-yellow);
+}
+
+/*Background*/
+body {
+  background-color: var(--background-color);
+  font-family: 'Inter', sans-serif;
+  color: var(--white-color);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.color {
+  height: 1000px;
+  width: 1000px;
+  background-image: radial-gradient(closest-side, var(--complementary-color), var(--background-color));
+  position: absolute;
+  top: -570px;
+  left: 15%;
+  z-index: -1;
+}
+
+/*Header*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 42px 62px;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  animation: fade-down 0.5s 0.4s backwards;
+}
+
+.logo:hover {
+  transform: scale(1.15);
+}
+
+.btn {
+  background-color: var(--white-color);
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--background-color);
+  padding: 10px 20px;
+  border-radius: 5000px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.15);
+}
+
+.btn__contact {
+  animation: fade-down 0.5s 0.4s backwards;
+}
+
+/*Main*/
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 90px;
+  padding: 0 25px;
+}
+
+/*Intro*/
+.intro {
+  padding-top: 125px;
+  animation: fade-up 0.5s;
+}
+
+.first__heading {
+  font-size: 48px;
+  font-weight: 600;
+  opacity: 0.94;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emoji {
+  font-size: 35px;
+  margin-top: -8px;
+  margin-left: 3px;
+}
+
+.text {
+  font-size: 40px;
+  opacity: 0.9;
+  font-weight: 300;
+  margin-top: 11px;
+  line-height: 1.1;
+}
+
+.text__second {
+  display: block;
+}
