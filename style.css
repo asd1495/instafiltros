@@ -218,11 +218,13 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 333px 119px 325px;
   gap: 25px;
+  position: relative;
 }
 
 .project {
   border-radius: 15px;
   overflow: hidden;
+  position: relative;
 }
 
 .project:nth-child(1) {
@@ -255,14 +257,46 @@ body {
   grid-row: 3 / 5;
 }
 
+.project::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-color);
+  position: absolute;
+  opacity: 0.2;
+  z-index: 10;
+  transition: all 0.4s;
+}
+
+.project:hover::before {
+  opacity: 0.1;
+}
+
 .grid-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transform: scale(1.08);
+  transition: all 0.4s;
+}
+
+.project:hover .grid-img {
+  filter: blur(2px);
+  transform: scale(1.01);
 }
 
 /*Project info*/
 .project-info {
   opacity: 0;
   position: absolute;
+}
+
+/*Fade*/
+.fade {
+  height: 1000px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(to top, #000, transparent);
+  pointer-events: none;
 }
