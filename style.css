@@ -243,7 +243,7 @@ body {
 
 .project:nth-child(4) {
   grid-column: 1 / 2;
-  grid-row: 3 / 5;
+  grid-row: 3 / 4;
 }
 
 .project:nth-child(5) {
