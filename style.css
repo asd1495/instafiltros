@@ -215,7 +215,10 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 333px 119px 325px;
+  grid-template-rows:  
+                      333px 119px 325px 
+                      333px 119px 325px
+                      ;
   gap: 25px;
   position: relative;
 }
@@ -237,8 +240,8 @@ body {
 }
 
 .project:nth-child(3) {
-  grid-row: 1 / 3;
   grid-column: 3 / 4;
+  grid-row: 1 / 3;
 }
 
 .project:nth-child(4) {
@@ -253,13 +256,29 @@ body {
 
 .project:nth-child(6) {
   grid-column: 3 / 4;
-  grid-row: 3 / 5;
+  grid-row: 3 / 4;
+}
+
+.project:nth-child(7) {
+  grid-column: 1 / 2;
+  grid-row: 4 / 6;
+}
+
+.project:nth-child(8) {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.project:nth-child(9) {
+  grid-column: 3 / 4;
+  grid-row: 4 / 6;
 }
 
 #static {
   position: absolute;
   transition: all 0.4s;
   transform: scale(1.08);
+  object-fit: cover;
 }
 
 #static:hover {
@@ -327,7 +346,7 @@ body {
 
 /*Fade*/
 .fade {
-  height: 1000px;
+  height: 100%;
   width: 100%;
   position: absolute;
   bottom: 0;
