@@ -1,4 +1,4 @@
-//Fade 
+/*//Fade 
 const fadeEl = document.querySelector('.fade');
 let hasScrolled = false;
 
@@ -52,6 +52,62 @@ filters.addEventListener('click', e => {
     } else if (filterText === '3D') {
         project1.style.opacity = '0';
         project1.style.transform = 'scale(0)';
+        
+        project2.style.opacity = '0';
+        project2.style.transform = 'scale(0)';
+
+        project3.style.opacity = '0';
+        project3.style.transform = 'scale(0)';
+
+        project5.style.opacity = '0';
+        project5.style.transform = 'scale(0)';
+
+        project7.style.opacity = '0';
+        project7.style.transform = 'scale(0)';
+
+        project8.style.opacity = '0';
+        project8.style.transform = 'scale(0)';
+
+        project9.style.opacity = '0';
+        project9.style.transform = 'scale(0)';
+
+        project10.style.opacity = '0';
+        project10.style.transform = 'scale(0)';
+
+        project11.style.opacity = '0';
+        project11.style.transform = 'scale(0)';
+
+        project12.style.opacity = '0';
+        project12.style.transform = 'scale(0)';
+
+        project14.style.opacity = '0';
+        project14.style.transform = 'scale(0)';
+
+        project15.style.opacity = '0';
+        project15.style.transform = 'scale(0)';
+
+        project16.style.opacity = '0';
+        project16.style.transform = 'scale(0)';
+
+        project17.style.opacity = '0';
+        project17.style.transform = 'scale(0)';
+
+        project18.style.opacity = '0';
+        project18.style.transform = 'scale(0)';
+
+        project19.style.opacity = '0';
+        project19.style.transform = 'scale(0)';
+
+        project20.style.opacity = '0';
+        project20.style.transform = 'scale(0)';
+
+        project21.style.opacity = '0';
+        project21.style.transform = 'scale(0)';
+
+        project4.style.transform = 'translateY(-325px)';
+        project6.style.transform = 'translate(-326px, -501px)';
+        project13.style.transform = 'translate(647px, -1703px)';
+        
     } else if (filterText === 'AR') {
 
     } else if (filterText === 'Cyberpunk') {
@@ -61,4 +117,4 @@ filters.addEventListener('click', e => {
     } else if (filterText === 'Estilos de cámara') {
 
     }
-});
+});*/
